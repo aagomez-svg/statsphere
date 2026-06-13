@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const BASE = (import.meta.env.VITE_API_URL || '') + '/api'
+const BASE = 'https://statsphere-production.up.railway.app/api'
 
 export const fetchNBA       = () => axios.get(`${BASE}/nba`).then(r => r.data)
 export const fetchNHL       = () => axios.get(`${BASE}/nhl`).then(r => r.data)
