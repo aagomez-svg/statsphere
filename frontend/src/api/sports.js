@@ -19,3 +19,4 @@ export const fetchPlayerStats      = (id, season) => axios.get(`${BASE}/players/
 export const fetchPlayerNews       = (id) => axios.get(`${BASE}/players/${id}/news`).then(r => r.data)
 export const fetchAIPreview        = (sport, context) =>
   axios.post(`${BASE}/ai/preview`, { sport, context }).then(r => r.data)
+
